@@ -5,8 +5,8 @@ on:
   schedule:
     - cron: '*/10 * * * *' 
   workflow_dispatch: 
-
-  contents: write
+permissions:
+    contents: write
 
 jobs:
   fetch-and-commit:
