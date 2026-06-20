@@ -4,7 +4,7 @@ import json
 from datetime import datetime, timezone
 
 # 1. Configuration
-CLUB_URL_ID = "uniben-chess-enthusiasts" 
+CLUB_URL_ID = "uniben-chess-enthusiasts"
 headers = {
     "User-Agent": "ClubLeaderboard/1.0 (contact: fisekenegbe@gmail.com)"
 }
@@ -12,19 +12,20 @@ headers = {
 def get_club_leaderboard():
     print(f"Fetching roster for club: {CLUB_URL_ID}...")
     
-    # 2. Get the Club Roster
-        members_url = f"https://api.chess.com/pub/club/{CLUB_URL_ID}/members"
+    # 2. Get the Club Roster with Debugging
+    members_url = f"https://api.chess.com/pub/club/{CLUB_URL_ID}/members"
     response = requests.get(members_url, headers=headers)
     
     print(f"API Status Code: {response.status_code}")
     
     try:
         members_data = response.json()
-        print(f"Raw Chess.com Response: {members_data}")
+        if response.status_code != 200:
+            print(f"Error from Chess.com: {members_data}")
+            return
     except Exception as e:
         print(f"Failed to read JSON. Raw text: {response.text}")
         members_data = {}
-
 
     all_members = (
         members_data.get("weekly", []) + 
@@ -32,10 +33,14 @@ def get_club_leaderboard():
         members_data.get("all_time", [])
     )
 
+    if not all_members:
+        print("Warning: No members found in the API response.")
+        return
+
     players = []
 
     # 3. Fetch data for each player 
-    for member in all_members[:10]: 
+    for member in all_members: 
         username = member["username"]
         print(f"Extracting data for {username}...")
         
@@ -53,8 +58,6 @@ def get_club_leaderboard():
             
             # Fetch Profile (Avatar)
             profile_data = requests.get(profile_url, headers=headers).json()
-            
-            # If a user doesn't have an avatar, use the default Chess.com silhouette
             avatar = profile_data.get("avatar", "https://www.chess.com/bundles/web/images/user-image.svg")
             
             time.sleep(0.3) # Critical throttle
@@ -83,7 +86,7 @@ def get_club_leaderboard():
     with open("leaderboard.json", "w") as outfile:
         json.dump(output_data, outfile, indent=4)
         
-    print("Success: leaderboard.json has been generated.")
+    print(f"Success: leaderboard.json has been generated with {len(players)} players.")
 
 if __name__ == "__main__":
     get_club_leaderboard()
