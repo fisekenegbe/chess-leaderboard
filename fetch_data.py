@@ -13,8 +13,18 @@ def get_club_leaderboard():
     print(f"Fetching roster for club: {CLUB_URL_ID}...")
     
     # 2. Get the Club Roster
-    members_url = f"https://api.chess.com/pub/club/{CLUB_URL_ID}/members"
-    members_data = requests.get(members_url, headers=headers).json()
+        members_url = f"https://api.chess.com/pub/club/{CLUB_URL_ID}/members"
+    response = requests.get(members_url, headers=headers)
+    
+    print(f"API Status Code: {response.status_code}")
+    
+    try:
+        members_data = response.json()
+        print(f"Raw Chess.com Response: {members_data}")
+    except Exception as e:
+        print(f"Failed to read JSON. Raw text: {response.text}")
+        members_data = {}
+
 
     all_members = (
         members_data.get("weekly", []) + 
