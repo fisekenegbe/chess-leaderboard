@@ -19,6 +19,50 @@
     --font-numbers: 'Rajdhani', sans-serif;
 }
 
+.placard.gold {
+    position: relative;
+    overflow: hidden;
+}
+
+.placard.gold::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15), rgba(255,255,255,0));
+    transform: skewX(-25deg);
+    animation: shimmer 4s infinite;
+    pointer-events: none; /* Stops it from blocking clicks */
+}
+
+@keyframes shimmer {
+    0% { left: -150%; }
+    20% { left: 200%; }
+    100% { left: 200%; }
+}
+
+.avatar-large, .avatar-small {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.placard:hover .avatar-large,
+.list-item {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.list-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(10px) scale(1.02);
+    box-shadow: -6px 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.list-item:hover .list-rank {
+    color: var(--text-primary);
+}
+
 body {
     background-color: var(--bg-main);
     color: var(--text-primary);
@@ -44,7 +88,6 @@ body {
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
-/* Header & Pulsing Status */
 .leaderboard-header {
     display: flex;
     justify-content: space-between;
@@ -74,7 +117,6 @@ body {
     animation: pulse 2s infinite;
 }
 
-/* THE PODIUM PLACARDS */
 .podium-container {
     display: flex;
     justify-content: center;
