@@ -100,7 +100,7 @@ body {
 
 .placard.gold {
     width: 35%;
-    padding: 30px 20px; 
+    padding: 30px 20px; /* Taller to emphasize 1st place */
     border-top: 2px solid var(--gold);
     box-shadow: 0 -10px 30px rgba(241, 196, 15, 0.15);
     /* Shimmer Effect */
@@ -113,7 +113,7 @@ body {
         rgba(241, 196, 15, 0.1) 100%
     );
     background-size: 200% 100%;
-    animation: shimmerBg 3s infinite linear;
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards, shimmerBg 3s infinite linear;
 }
 
 .placard.silver { border-top: 2px solid var(--silver); }
