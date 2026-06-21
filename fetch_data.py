@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 contact_email = os.getenv("CONTACT_EMAIL", "hidden_email@example.com")
 
 # 1. Configuration
-CLUB_URL_ID = "uniben-chess-club"
+CLUB_URL_ID = "uniben-chess-enthusiasts"
 headers = {
     "User-Agent": f"ClubLeaderboard/1.0 (contact: {contact_email})"
 }
