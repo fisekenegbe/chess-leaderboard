@@ -19,50 +19,6 @@
     --font-numbers: 'Rajdhani', sans-serif;
 }
 
-.placard.gold {
-    position: relative;
-    overflow: hidden;
-}
-
-.placard.gold::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -150%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15), rgba(255,255,255,0));
-    transform: skewX(-25deg);
-    animation: shimmer 4s infinite;
-    pointer-events: none; /* Stops it from blocking clicks */
-}
-
-@keyframes shimmer {
-    0% { left: -150%; }
-    20% { left: 200%; }
-    100% { left: 200%; }
-}
-
-.avatar-large, .avatar-small {
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.placard:hover .avatar-large,
-.list-item {
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.list-item:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.2);
-    transform: translateX(10px) scale(1.02);
-    box-shadow: -6px 0 20px rgba(0, 0, 0, 0.4);
-}
-
-.list-item:hover .list-rank {
-    color: var(--text-primary);
-}
-
 body {
     background-color: var(--bg-main);
     color: var(--text-primary);
@@ -73,7 +29,7 @@ body {
     min-height: 100vh;
     margin: 0;
     background-image: radial-gradient(circle at 50% -20%, #1f2937, #0d1117);
-    overflow-x: hidden; /* Prevents horizontal scroll on mobile */
+    overflow-x: hidden;
 }
 
 .leaderboard-panel {
@@ -117,6 +73,7 @@ body {
     animation: pulse 2s infinite;
 }
 
+/* THE PODIUM PLACARDS */
 .podium-container {
     display: flex;
     justify-content: center;
@@ -143,10 +100,20 @@ body {
 
 .placard.gold {
     width: 35%;
-    padding: 30px 20px; /* Taller to emphasize 1st place */
-    background: linear-gradient(180deg, rgba(241, 196, 15, 0.1) 0%, rgba(255, 255, 255, 0.03) 100%);
+    padding: 30px 20px; 
     border-top: 2px solid var(--gold);
     box-shadow: 0 -10px 30px rgba(241, 196, 15, 0.15);
+    /* Shimmer Effect */
+    background: linear-gradient(
+        110deg,
+        rgba(241, 196, 15, 0.1) 0%,
+        rgba(255, 255, 255, 0.03) 40%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.03) 60%,
+        rgba(241, 196, 15, 0.1) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmerBg 3s infinite linear;
 }
 
 .placard.silver { border-top: 2px solid var(--silver); }
@@ -217,13 +184,6 @@ body {
     border: 1px solid transparent;
     padding: 12px 20px;
     border-radius: 12px;
-    transition: all 0.2s ease;
-}
-
-.list-item:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: var(--panel-border);
-    transform: translateX(5px);
 }
 
 .list-left {
@@ -255,11 +215,41 @@ body {
     font-weight: 700;
 }
 
+/* --- HOVER ANIMATIONS --- */
+.avatar-large, .avatar-small {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.placard:hover .avatar-large,
+.list-item:hover .avatar-small {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.list-item {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.list-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(10px) scale(1.02);
+    box-shadow: -6px 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.list-item:hover .list-rank {
+    color: var(--text-primary);
+}
+
 /* ANIMATIONS */
 @keyframes pulse {
     0% { box-shadow: 0 0 0 0 rgba(46, 160, 67, 0.7); }
     70% { box-shadow: 0 0 0 6px rgba(46, 160, 67, 0); }
     100% { box-shadow: 0 0 0 0 rgba(46, 160, 67, 0); }
+}
+
+@keyframes shimmerBg {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
 }
 
 @keyframes fadeInUp {
@@ -331,5 +321,4 @@ body {
     .list-item {
         padding: 10px 15px;
     }
-                   }
-        
+}
