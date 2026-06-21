@@ -1,13 +1,17 @@
 import requests
 import time
 import json
+import os
 from datetime import datetime, timezone
 
+contact_email = os.getenv("CONTACT_EMAIL", "hidden_email@example.com")
+
 # 1. Configuration
-CLUB_URL_ID = "uniben-chess-enthusiasts"
+CLUB_URL_ID = "uniben-chess-club"
 headers = {
-    "User-Agent": "ClubLeaderboard/1.0 (contact: fisekenegbe@gmail.com)"
+    "User-Agent": f"ClubLeaderboard/1.0 (contact: {contact_email})"
 }
+
 
 def get_club_leaderboard():
     print(f"Fetching roster for club: {CLUB_URL_ID}...")
