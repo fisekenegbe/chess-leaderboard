@@ -1,12 +1,12 @@
 name: Auto-Update Chess Leaderboard
 
-
 on:
   schedule:
     - cron: '0 0 * * *' 
   workflow_dispatch: 
+
 permissions:
-    contents: write
+  contents: write
 
 jobs:
   fetch-and-commit:
@@ -25,6 +25,8 @@ jobs:
         run: pip install requests
 
       - name: Run API Extraction Script
+        env:
+          CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
         run: python fetch_data.py
 
       - name: Commit and Push new JSON
