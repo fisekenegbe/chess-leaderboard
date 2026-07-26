@@ -23,14 +23,16 @@ body {
     background-color: var(--bg-main);
     color: var(--text-primary);
     font-family: var(--font-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     margin: 0;
+    /* Removed the display: flex and alignment bullshit */
+    /* Removed overflow-x: hidden */
     background-image: radial-gradient(circle at 50% -20%, #1f2937, #0d1117);
-    overflow-x: hidden;
+    
+    /* Optional: Add a tiny bit of padding so the panel doesn't stick to the very top/bottom on tall screens */
+    padding: 20px 0; 
 }
+
 
 .leaderboard-panel {
     background: var(--panel-bg);
