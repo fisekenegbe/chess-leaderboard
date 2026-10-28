@@ -1,9 +1,9 @@
 {
-    "timestamp": "03:18 AM UTC",
+    "timestamp": "03:33 AM UTC",
     "players": [
         {
             "username": "stable_being24",
-            "rapid_elo": 2202,
+            "rapid_elo": 2234,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/369782381.c6264f53.200x200o.59ae1761b48f.jpg"
         },
         {
@@ -42,14 +42,14 @@
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/254921595.895827f8.200x200o.1a60fa64e3c4.gif"
         },
         {
+            "username": "maskedknight_tm",
+            "rapid_elo": 1717,
+            "avatar": "https://images.chesscomfiles.com/uploads/v1/user/529186497.df75627d.200x200o.197785ebdcd4.jpg"
+        },
+        {
             "username": "w-a-l-le",
             "rapid_elo": 1691,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/371714663.4debe399.200x200o.4683d932c222.jpg"
-        },
-        {
-            "username": "maskedknight_tm",
-            "rapid_elo": 1674,
-            "avatar": "https://images.chesscomfiles.com/uploads/v1/user/529186497.df75627d.200x200o.197785ebdcd4.jpg"
         },
         {
             "username": "king_doomx",
@@ -58,7 +58,7 @@
         },
         {
             "username": "johnnyxo4",
-            "rapid_elo": 1412,
+            "rapid_elo": 1452,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/307411465.2776469f.200x200o.aea53a143650.jpg"
         },
         {
@@ -73,7 +73,7 @@
         },
         {
             "username": "lilpee07",
-            "rapid_elo": 1368,
+            "rapid_elo": 1376,
             "avatar": "https://www.chess.com/bundles/web/images/user-image.svg"
         },
         {
@@ -83,7 +83,7 @@
         },
         {
             "username": "alekhine136",
-            "rapid_elo": 1330,
+            "rapid_elo": 1331,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/413816789.8703babf.200x200o.4e4b99d2ca90.jpg"
         },
         {
@@ -108,7 +108,7 @@
         },
         {
             "username": "eviltsunami",
-            "rapid_elo": 1238,
+            "rapid_elo": 1254,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/489252093.3828c73e.200x200o.206fbfdca9c6.jpg"
         },
         {
@@ -122,23 +122,23 @@
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/433489137.338dd756.200x200o.06f3704dec78.jpg"
         },
         {
-            "username": "brightie67",
-            "rapid_elo": 1045,
-            "avatar": "https://www.chess.com/bundles/web/images/user-image.svg"
-        },
-        {
             "username": "thatweirdanimegirl_d",
             "rapid_elo": 1045,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/455870808.94fc1ff8.200x200o.9a6df393031a.jpg"
         },
         {
+            "username": "brightie67",
+            "rapid_elo": 1037,
+            "avatar": "https://www.chess.com/bundles/web/images/user-image.svg"
+        },
+        {
             "username": "shadowmagex",
-            "rapid_elo": 1005,
+            "rapid_elo": 1013,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/438699121.cce07bc8.200x200o.d20eeaf3ce5e.png"
         },
         {
             "username": "esopopi",
-            "rapid_elo": 855,
+            "rapid_elo": 856,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/561545997.f4b81878.200x200o.d4165456ae44.jpg"
         },
         {
@@ -178,7 +178,7 @@
         },
         {
             "username": "ziontroly",
-            "rapid_elo": 551,
+            "rapid_elo": 559,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/495518697.b90adf5a.200x200o.31cc7a29e03e.jpg"
         },
         {
@@ -203,7 +203,7 @@
         },
         {
             "username": "brainiac846",
-            "rapid_elo": 361,
+            "rapid_elo": 369,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/394773081.b28c2689.200x200o.fabc101b01de.jpg"
         },
         {
