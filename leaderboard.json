@@ -1,5 +1,5 @@
 {
-    "timestamp": "04:43 AM UTC",
+    "timestamp": "04:42 AM UTC",
     "players": [
         {
             "username": "stable_being24",
@@ -23,7 +23,7 @@
         },
         {
             "username": "bladedamocles",
-            "rapid_elo": 1883,
+            "rapid_elo": 1875,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/364594677.655244df.200x200o.1b138f51f97b.jpg"
         },
         {
@@ -38,18 +38,18 @@
         },
         {
             "username": "maskedknight_tm",
-            "rapid_elo": 1770,
+            "rapid_elo": 1793,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/529186497.df75627d.200x200o.197785ebdcd4.jpg"
+        },
+        {
+            "username": "god_pain",
+            "rapid_elo": 1706,
+            "avatar": "https://images.chesscomfiles.com/uploads/v1/user/254921595.895827f8.200x200o.1a60fa64e3c4.gif"
         },
         {
             "username": "w-a-l-le",
             "rapid_elo": 1691,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/371714663.4debe399.200x200o.4683d932c222.jpg"
-        },
-        {
-            "username": "god_pain",
-            "rapid_elo": 1690,
-            "avatar": "https://images.chesscomfiles.com/uploads/v1/user/254921595.895827f8.200x200o.1a60fa64e3c4.gif"
         },
         {
             "username": "king_doomx",
@@ -63,7 +63,7 @@
         },
         {
             "username": "lilpee07",
-            "rapid_elo": 1467,
+            "rapid_elo": 1468,
             "avatar": "https://www.chess.com/bundles/web/images/user-image.svg"
         },
         {
@@ -73,13 +73,8 @@
         },
         {
             "username": "syneide_sis",
-            "rapid_elo": 1398,
+            "rapid_elo": 1389,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/577884972.dd35fb99.200x200o.2cfce0bb6272.jpg"
-        },
-        {
-            "username": "alekhine136",
-            "rapid_elo": 1347,
-            "avatar": "https://images.chesscomfiles.com/uploads/v1/user/413816789.8703babf.200x200o.4e4b99d2ca90.jpg"
         },
         {
             "username": "chessbrytz",
@@ -87,8 +82,13 @@
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/410488521.c4c4985f.200x200o.7d766df95c32.png"
         },
         {
+            "username": "alekhine136",
+            "rapid_elo": 1325,
+            "avatar": "https://images.chesscomfiles.com/uploads/v1/user/413816789.8703babf.200x200o.4e4b99d2ca90.jpg"
+        },
+        {
             "username": "gwill_15",
-            "rapid_elo": 1317,
+            "rapid_elo": 1325,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/393202483.747adee7.200x200o.74673d420d58.jpg"
         },
         {
@@ -102,23 +102,23 @@
             "avatar": "https://www.chess.com/bundles/web/images/user-image.svg"
         },
         {
-            "username": "eviltsunami",
-            "rapid_elo": 1230,
-            "avatar": "https://images.chesscomfiles.com/uploads/v1/user/489252093.3828c73e.200x200o.206fbfdca9c6.jpg"
-        },
-        {
             "username": "celebisking",
             "rapid_elo": 1220,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/456079686.2ab5336c.200x200o.d3837924fd5b.jpg"
         },
         {
+            "username": "eviltsunami",
+            "rapid_elo": 1206,
+            "avatar": "https://images.chesscomfiles.com/uploads/v1/user/489252093.3828c73e.200x200o.206fbfdca9c6.jpg"
+        },
+        {
             "username": "nullspace_d",
-            "rapid_elo": 1118,
+            "rapid_elo": 1112,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/559612283.d55faed2.200x200o.828e59ab58d8.jpg"
         },
         {
             "username": "ihavealowel0",
-            "rapid_elo": 1082,
+            "rapid_elo": 1091,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/433489137.338dd756.200x200o.06f3704dec78.jpg"
         },
         {
@@ -132,14 +132,14 @@
             "avatar": "https://www.chess.com/bundles/web/images/user-image.svg"
         },
         {
-            "username": "esopopi",
-            "rapid_elo": 1029,
-            "avatar": "https://images.chesscomfiles.com/uploads/v1/user/561545997.f4b81878.200x200o.d4165456ae44.jpg"
-        },
-        {
             "username": "shadowmagex",
             "rapid_elo": 1013,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/438699121.cce07bc8.200x200o.d20eeaf3ce5e.png"
+        },
+        {
+            "username": "esopopi",
+            "rapid_elo": 980,
+            "avatar": "https://images.chesscomfiles.com/uploads/v1/user/561545997.f4b81878.200x200o.d4165456ae44.jpg"
         },
         {
             "username": "re_maldris",
@@ -148,7 +148,7 @@
         },
         {
             "username": "essie42",
-            "rapid_elo": 816,
+            "rapid_elo": 824,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/375190927.dca54d12.200x200o.88e0802004fe.jpg"
         },
         {
@@ -183,7 +183,7 @@
         },
         {
             "username": "unusualstanford",
-            "rapid_elo": 593,
+            "rapid_elo": 594,
             "avatar": "https://www.chess.com/bundles/web/images/user-image.svg"
         },
         {
@@ -198,7 +198,7 @@
         },
         {
             "username": "merrit939",
-            "rapid_elo": 448,
+            "rapid_elo": 424,
             "avatar": "https://images.chesscomfiles.com/uploads/v1/user/544165431.e49d3913.200x200o.f8009d49835b.jpg"
         },
         {
